@@ -1,0 +1,25 @@
+
+<h2>Contact Form</h2>
+<ng-container [formGroup]="contactForm">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+</div>
+<div>
+    <label>Email</label>
+    <input type="text" formControlName="email" />
+</div>
+<div>
+    <label>Phone No</label>
+    <input type="text" formControlName="phoneNo" />
+</div>
+<div>
+    <label>Message</label>
+    <textarea  formControlName="message"></textarea>
+</div>
+<div>
+    <button (click)="handleSubmit()" type="button">Submit</button>
+    <button (click)="handleClear()" type="button">Clear</button>
+</div>
+</ng-container>
+
